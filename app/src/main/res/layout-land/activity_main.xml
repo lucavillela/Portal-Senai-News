@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Scrollado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absolutey="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/C"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/BtnAnterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Anterior"
+            app:layout_constraintBaseline_toBaselineOf="@+id/BtnProximo"
+            app:layout_constraintEnd_toStartOf="@+id/BtnProximo" />
+
+        <Button
+            android:id="@+id/BtnProximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Próximo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+        <TextView
+            android:id="@+id/Autor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Bernardo Serravalle"
+            app:layout_constraintBaseline_toBaselineOf="@+id/BtnProximo"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="17dp"
+            app:layout_constraintBottom_toTopOf="@+id/BtnAnterior"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Manchete">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ConteudoNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempor, mi ultricies commodo aliquet, nibh odio egestas leo, a venenatis ipsum mi ut velit. Mauris elementum nec enim id dignissim. Nulla id ligula nulla. Vivamus bibendum et velit id eleifend. Etiam et augue in ex cursus ornare. Mauris mauris tellus, pretium in sapien non, consequat convallis tellus. In ut nulla semper, aliquam lectus hendrerit, vehicula erat. Ut ac ex blandit, mollis urna non, blandit nibh. Aliquam vel condimentum ante. Aenean posuere augue in sapien consequat ultricies. Nam eu ligula aliquet, dignissim odio vel, commodo lectus. Aenean dignissim est in suscipit viverra. Suspendisse laoreet leo eget justo maximus laoreet condimentum eget dui. Aliquam purus felis, pretium et nulla ut, aliquet sollicitudin lectus. Pellentesque ultricies rutrum nisl.  Nulla non augue erat. Vestibulum orci eros, tincidunt porttitor risus imperdiet, faucibus faucibus neque. Nam vitae mattis arcu. Morbi a vulputate eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin quis ultricies nunc. Donec et nisi ac ipsum pretium porta non vitae lorem. Donec ac massa volutpat, sodales diam vitae, malesuada neque.  Proin eu risus vel ante semper imperdiet id id enim. Curabitur mi est, rutrum a rhoncus vitae, ultrices ut mauris. Fusce sit amet tincidunt risus. Phasellus aliquet congue ligula, vitae tristique dui porttitor dictum. Vivamus non commodo dolor. Proin non lacus tortor. Donec iaculis turpis eget rhoncus pulvinar. Donec ligula leo, tristique ac augue convallis, blandit efficitur elit. Donec convallis finibus tincidunt. Aenean auctor massa ac magna vestibulum euismod.  Integer dui nibh, pretium vel tincidunt id, sodales finibus velit. Nulla vel elit orci. Ut mattis, ligula eu tincidunt mollis, orci magna accumsan eros, nec tempus tortor tortor vel eros. Duis nec convallis risus. In hac habitasse platea dictumst. Cras viverra consectetur nibh, et posuere quam rhoncus et. Etiam in ipsum convallis, pretium sapien a, semper tellus. Vestibulum et mi finibus, dignissim lectus sed, vehicula mauris. Mauris imperdiet in enim id pretium. Nunc aliquam urna eros, et volutpat ante dignissim vitae. Etiam eget ipsum sodales, tincidunt ante id, rhoncus dui. Nulla pulvinar, metus non rhoncus feugiat, mauris turpis scelerisque libero, sed ullamcorper nunc tellus et eros.  Curabitur ac sollicitudin mi. Mauris accumsan ante et massa efficitur faucibus. Phasellus dictum sem ac nunc molestie laoreet. Vestibulum cursus nunc ut tincidunt consequat. Integer tempor faucibus lorem, eget tincidunt sapien venenatis vitae. Maecenas rutrum ornare leo non accumsan. Quisque a faucibus justo. Cras pharetra risus id fermentum laoreet. Pellentesque fermentum massa ac ante iaculis faucibus. Etiam ullamcorper magna risus. Aliquam in urna felis. Nunc enim libero, pellentesque non libero eget, ornare semper dolor. Cras est elit, laoreet id ex sit amet, finibus malesuada eros. Donec faucibus suscipit mauris a viverra. Curabitur luctus odio non elit condimentum auctor."
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="61/69/69"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Manchete"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/Manchete"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="O valor do real caiu asdasdasdasdade novo"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ImagemNews" />
+
+        <ImageView
+            android:id="@+id/ImagemNews"
+            android:layout_width="731dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fotobolsavalores" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
